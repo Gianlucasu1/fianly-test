@@ -26,99 +26,99 @@ export class ProductService {
   private mockProducts: Product[] = [
     {
       id: 1,
-      name: 'Wireless Headphones',
+      name: 'Auriculares Inalámbricos',
       price: 99.99,
-      category: 'Electronics',
-      image: 'https://via.placeholder.com/300x300?text=Headphones',
-      description: 'High-quality wireless headphones with noise cancellation and long battery life. Perfect for music lovers and professionals who need crystal clear audio quality.'
+      category: 'Electrónicos',
+      image: 'https://via.placeholder.com/300x300?text=Auriculares',
+      description: 'Auriculares inalámbricos de alta calidad con cancelación de ruido y larga duración de batería. Perfectos para amantes de la música y profesionales que necesitan calidad de audio cristalina.'
     },
     {
       id: 2,
-      name: 'Smart Watch',
+      name: 'Reloj Inteligente',
       price: 199.99,
-      category: 'Electronics',
-      image: 'https://via.placeholder.com/300x300?text=Smart+Watch',
-      description: 'Feature-rich smartwatch with health tracking, GPS, and water resistance. Monitor your fitness goals and stay connected on the go.'
+      category: 'Electrónicos',
+      image: 'https://via.placeholder.com/300x300?text=Reloj+Inteligente',
+      description: 'Reloj inteligente con múltiples funciones, seguimiento de salud, GPS y resistencia al agua. Monitorea tus objetivos de fitness y mantente conectado en movimiento.'
     },
     {
       id: 3,
-      name: 'Laptop Stand',
+      name: 'Soporte para Laptop',
       price: 29.99,
-      category: 'Accessories',
-      image: 'https://via.placeholder.com/300x300?text=Laptop+Stand',
-      description: 'Ergonomic laptop stand made from premium aluminum with adjustable height. Improve your posture and workspace comfort.'
+      category: 'Accesorios',
+      image: 'https://via.placeholder.com/300x300?text=Soporte+Laptop',
+      description: 'Soporte ergonómico para laptop hecho de aluminio premium con altura ajustable. Mejora tu postura y comodidad en el espacio de trabajo.'
     },
     {
       id: 4,
-      name: 'USB-C Hub',
+      name: 'Hub USB-C',
       price: 49.99,
-      category: 'Accessories',
-      image: 'https://via.placeholder.com/300x300?text=USB+Hub',
-      description: 'Multi-port USB-C hub with HDMI, USB 3.0, and fast charging capabilities. Expand your device connectivity effortlessly.'
+      category: 'Accesorios',
+      image: 'https://via.placeholder.com/300x300?text=Hub+USB',
+      description: 'Hub USB-C multipuerto con HDMI, USB 3.0 y capacidades de carga rápida. Expande la conectividad de tus dispositivos sin esfuerzo.'
     },
     {
       id: 5,
-      name: 'Bluetooth Speaker',
+      name: 'Altavoz Bluetooth',
       price: 79.99,
       category: 'Audio',
-      image: 'https://via.placeholder.com/300x300?text=Speaker',
-      description: 'Portable Bluetooth speaker with 360-degree sound and waterproof design. Take your music anywhere with premium sound quality.'
+      image: 'https://via.placeholder.com/300x300?text=Altavoz',
+      description: 'Altavoz Bluetooth portátil con sonido de 360 grados y diseño resistente al agua. Lleva tu música a cualquier lugar con calidad de sonido premium.'
     },
     {
       id: 6,
-      name: 'Gaming Mouse',
+      name: 'Mouse Gaming',
       price: 59.99,
       category: 'Gaming',
-      image: 'https://via.placeholder.com/300x300?text=Gaming+Mouse',
-      description: 'High-precision gaming mouse with customizable RGB lighting and programmable buttons. Enhance your gaming performance.'
+      image: 'https://via.placeholder.com/300x300?text=Mouse+Gaming',
+      description: 'Mouse gaming de alta precisión con iluminación RGB personalizable y botones programables. Mejora tu rendimiento en los juegos.'
     },
     {
       id: 7,
-      name: 'Phone Case',
+      name: 'Funda para Teléfono',
       price: 19.99,
-      category: 'Accessories',
-      image: 'https://via.placeholder.com/300x300?text=Phone+Case',
-      description: 'Durable phone case with military-grade protection and wireless charging support. Keep your device safe and stylish.'
+      category: 'Accesorios',
+      image: 'https://via.placeholder.com/300x300?text=Funda+Telefono',
+      description: 'Funda duradera para teléfono con protección de grado militar y soporte para carga inalámbrica. Mantén tu dispositivo seguro y con estilo.'
     },
     {
       id: 8,
       name: 'Tablet',
       price: 299.99,
-      category: 'Electronics',
+      category: 'Electrónicos',
       image: 'https://via.placeholder.com/300x300?text=Tablet',
-      description: 'Lightweight tablet with high-resolution display perfect for work and entertainment. Productivity and fun in one device.'
+      description: 'Tablet ligera con pantalla de alta resolución perfecta para trabajo y entretenimiento. Productividad y diversión en un solo dispositivo.'
     },
     {
       id: 9,
-      name: 'Mechanical Keyboard',
+      name: 'Teclado Mecánico',
       price: 129.99,
       category: 'Gaming',
-      image: 'https://via.placeholder.com/300x300?text=Keyboard',
-      description: 'Premium mechanical keyboard with backlit keys and tactile switches. Perfect for gaming and professional typing.'
+      image: 'https://via.placeholder.com/300x300?text=Teclado',
+      description: 'Teclado mecánico premium con teclas retroiluminadas y switches táctiles. Perfecto para gaming y escritura profesional.'
     },
     {
       id: 10,
-      name: 'Webcam HD',
+      name: 'Cámara Web HD',
       price: 89.99,
-      category: 'Electronics',
-      image: 'https://via.placeholder.com/300x300?text=Webcam',
-      description: 'High-definition webcam with auto-focus and built-in microphone. Ideal for video conferencing and content creation.'
+      category: 'Electrónicos',
+      image: 'https://via.placeholder.com/300x300?text=Camara+Web',
+      description: 'Cámara web de alta definición con enfoque automático y micrófono integrado. Ideal para videoconferencias y creación de contenido.'
     },
     {
       id: 11,
-      name: 'Power Bank',
+      name: 'Batería Portátil',
       price: 39.99,
-      category: 'Accessories',
-      image: 'https://via.placeholder.com/300x300?text=Power+Bank',
-      description: 'Portable power bank with fast charging technology and multiple device support. Never run out of battery again.'
+      category: 'Accesorios',
+      image: 'https://via.placeholder.com/300x300?text=Bateria+Portatil',
+      description: 'Batería portátil con tecnología de carga rápida y soporte para múltiples dispositivos. Nunca te quedes sin batería otra vez.'
     },
     {
       id: 12,
-      name: 'Wireless Charger',
+      name: 'Cargador Inalámbrico',
       price: 24.99,
-      category: 'Accessories',
-      image: 'https://via.placeholder.com/300x300?text=Wireless+Charger',
-      description: 'Fast wireless charging pad compatible with all Qi-enabled devices. Convenient and cable-free charging solution.'
+      category: 'Accesorios',
+      image: 'https://via.placeholder.com/300x300?text=Cargador+Inalambrico',
+      description: 'Base de carga inalámbrica rápida compatible con todos los dispositivos habilitados para Qi. Solución de carga conveniente y sin cables.'
     }
   ];
 

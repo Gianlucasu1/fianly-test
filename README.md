@@ -98,13 +98,6 @@ Aplicación web desarrollada en Angular que implementa un sistema completo de au
   - Fácil personalización y mantenimiento
   - Optimización automática del CSS final
 
-#### **RxJS 7.8.0**
-- **Propósito**: Programación reactiva y manejo de streams de datos
-- **Por qué**:
-  - Manejo elegante de operaciones asíncronas
-  - Composición de operadores para transformación de datos
-  - Integración nativa con Angular
-  - Gestión eficiente de subscripciones
 
 #### **TypeScript 5.8.2**
 - **Propósito**: Superset de JavaScript con tipado estático
@@ -124,10 +117,6 @@ Aplicación web desarrollada en Angular que implementa un sistema completo de au
   - Datos persistentes durante el desarrollo
   - Fácil configuración y uso
 
-#### **Angular CLI y Build Tools**
-- **Angular CLI**: Herramientas de línea de comandos para Angular
-- **Angular Build**: Sistema de construcción optimizado
-- **PostCSS**: Procesamiento de CSS para Tailwind
 
 #### **Testing Framework**
 - **Jasmine**: Framework de testing para JavaScript
@@ -198,6 +187,7 @@ src/
 - [x] Inicio de sesión con verificación de credenciales
 - [x] Persistencia de sesión con localStorage
 - [x] Logout con limpieza de datos
+
 
 ### ✅ Gestión de Productos
 - [x] Listado de productos con imágenes, nombres, precios y categorías

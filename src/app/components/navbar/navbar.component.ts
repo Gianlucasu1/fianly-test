@@ -12,13 +12,11 @@ import { Router } from '@angular/router';
         <div class="flex justify-between h-16">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <h1 class="text-xl font-bold">MyApp</h1>
+              <h1 class="text-xl font-bold">Fianly Test</h1>
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-                <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Products</a>
-                <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Profile</a>
+                <a href="#" class="hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">Productos</a>
               </div>
             </div>
           </div>

@@ -17,8 +17,8 @@ import { ProductService, ProductFilters, ProductsResponse } from '../services/pr
       
       <main class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
-          <h1 class="text-3xl font-bold text-gray-900">Product Catalog</h1>
-          <p class="mt-2 text-gray-600">Discover our amazing products with advanced filtering and search.</p>
+          <h1 class="text-3xl font-bold text-gray-900">Catálogo de Productos</h1>
+          <p class="mt-2 text-gray-600">Descubre nuestros increíbles productos con filtros avanzados y búsqueda.</p>
         </div>
 
         <!-- Search and Filters -->
@@ -26,40 +26,40 @@ import { ProductService, ProductFilters, ProductsResponse } from '../services/pr
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <!-- Search -->
             <div>
-              <label for="search" class="block text-sm font-medium text-gray-700 mb-2">Search Products</label>
+              <label for="search" class="block text-sm font-medium text-gray-700 mb-2">Buscar Productos</label>
               <input
                 id="search"
                 type="text"
                 [(ngModel)]="searchTerm"
                 (input)="onSearchChange()"
-                placeholder="Search by name or category..."
+                placeholder="Buscar por nombre o categoría..."
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             </div>
 
             <!-- Sort By -->
             <div>
-              <label for="sortBy" class="block text-sm font-medium text-gray-700 mb-2">Sort By</label>
+              <label for="sortBy" class="block text-sm font-medium text-gray-700 mb-2">Ordenar Por</label>
               <select
                 id="sortBy"
                 [(ngModel)]="sortBy"
                 (change)="onSortChange()"
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                <option value="">Default</option>
-                <option value="name">Name</option>
-                <option value="price">Price</option>
+                <option value="">Por Defecto</option>
+                <option value="name">Nombre</option>
+                <option value="price">Precio</option>
               </select>
             </div>
 
             <!-- Sort Order -->
             <div>
-              <label for="sortOrder" class="block text-sm font-medium text-gray-700 mb-2">Order</label>
+              <label for="sortOrder" class="block text-sm font-medium text-gray-700 mb-2">Orden</label>
               <select
                 id="sortOrder"
                 [(ngModel)]="sortOrder"
                 (change)="onSortChange()"
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                <option value="asc">Ascending</option>
-                <option value="desc">Descending</option>
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
               </select>
             </div>
           </div>
@@ -68,10 +68,10 @@ import { ProductService, ProductFilters, ProductsResponse } from '../services/pr
         <!-- Results Info -->
         <div class="flex justify-between items-center mb-6">
           <div class="text-gray-600">
-            Showing {{ (currentPage - 1) * pageSize + 1 }}-{{ Math.min(currentPage * pageSize, totalProducts) }} of {{ totalProducts }} products
+            Mostrando {{ (currentPage - 1) * pageSize + 1 }}-{{ Math.min(currentPage * pageSize, totalProducts) }} de {{ totalProducts }} productos
           </div>
           <div class="text-sm text-gray-600">
-            Page {{ currentPage }} of {{ totalPages }}
+            Página {{ currentPage }} de {{ totalPages }}
           </div>
         </div>
 
@@ -91,8 +91,8 @@ import { ProductService, ProductFilters, ProductsResponse } from '../services/pr
         <!-- No Results -->
         <div *ngIf="!loading && products.length === 0" class="text-center py-12">
           <div class="text-gray-400 text-6xl mb-4">🔍</div>
-          <h3 class="text-lg font-medium text-gray-900 mb-2">No products found</h3>
-          <p class="text-gray-600">Try adjusting your search terms or filters.</p>
+          <h3 class="text-lg font-medium text-gray-900 mb-2">No se encontraron productos</h3>
+          <p class="text-gray-600">Intenta ajustar tus términos de búsqueda o filtros.</p>
         </div>
 
         <!-- Pagination -->
@@ -101,14 +101,14 @@ import { ProductService, ProductFilters, ProductsResponse } from '../services/pr
             (click)="goToPage(1)"
             [disabled]="currentPage === 1"
             class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
-            First
+            Primero
           </button>
           
           <button
             (click)="goToPage(currentPage - 1)"
             [disabled]="currentPage === 1"
             class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
-            Previous
+            Anterior
           </button>
 
           <span class="px-4 py-2 text-sm font-medium text-gray-700 bg-blue-50 border border-blue-200 rounded-md">
@@ -119,14 +119,14 @@ import { ProductService, ProductFilters, ProductsResponse } from '../services/pr
             (click)="goToPage(currentPage + 1)"
             [disabled]="currentPage === totalPages"
             class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
-            Next
+            Siguiente
           </button>
           
           <button
             (click)="goToPage(totalPages)"
             [disabled]="currentPage === totalPages"
             class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
-            Last
+            Último
           </button>
         </div>
       </main>

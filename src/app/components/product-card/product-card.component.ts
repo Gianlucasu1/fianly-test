@@ -32,7 +32,7 @@ import { Product } from '../../models/product.interface';
           <button 
             (click)="viewDetails()"
             class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-200">
-            View Details
+            Ver Detalles
           </button>
         </div>
       </div>
